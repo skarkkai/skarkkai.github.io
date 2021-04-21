@@ -15,7 +15,7 @@ let obj;
 loader.load(model, function ( gltf ) {
   obj = gltf.scene.children[0];
   scene.add(obj);
-  console.log("added", gltf.scene)
+  console.log("added", obj)
 }, undefined, function ( error ) {
   console.error("failed loading", model, error);
 } );
