@@ -30,7 +30,7 @@
     console.log("about to load", model)
     loader.load(model, function ( gltf ) {
       console.log("adding", gltf.scene)
-      scene.add( gltf.scene );
+      scene.add( gltf.scene.children[0] );
     }, undefined, function ( error ) {
       console.error("failed loading", model, error);
     } );
