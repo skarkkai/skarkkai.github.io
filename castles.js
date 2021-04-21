@@ -20,7 +20,7 @@ const loader = new THREE.GLTFLoader();
 console.log("about to load", model)
 loader.load(model, function ( gltf ) {
   console.log("adding", gltf.scene)
-  scene.add( gltf.scene);
+  //scene.add( gltf.scene);
 }, undefined, function ( error ) {
   console.error("failed loading", model, error);
 } );
@@ -29,7 +29,7 @@ loader.load(model, function ( gltf ) {
 camera.position.z = 50;
 renderer.render( scene, camera );
 
-/*
+
 var animate = function () {
   requestAnimationFrame( animate );
 
@@ -38,6 +38,5 @@ var animate = function () {
 
   renderer.render( scene, camera );
 };
-
 animate();
-*/
+
