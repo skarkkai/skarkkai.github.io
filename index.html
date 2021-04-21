@@ -28,7 +28,7 @@
 
     const loader = new THREE.GLTFLoader();
     console.log("about to load", model)
-    loader.load("model.glt", function ( gltf ) {
+    loader.load(model, function ( gltf ) {
       console.log("adding", gltf.scene)
       scene.add( gltf.scene.children[0] );
     }, undefined, function ( error ) {
