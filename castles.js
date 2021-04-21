@@ -20,7 +20,7 @@ const loader = new THREE.GLTFLoader();
 console.log("about to load", model)
 loader.load(model, function ( gltf ) {
   console.log("adding", gltf.scene)
-  scene.add( gltf.scene.children[0] );
+  scene.add( gltf.scene);
 }, undefined, function ( error ) {
   console.error("failed loading", model, error);
 } );
