@@ -11,14 +11,16 @@ document.body.appendChild( renderer.domElement );
 
 const loader = new THREE.GLTFLoader();
 console.log("about to load", model)
+let obj;
 loader.load(model, function ( gltf ) {
-  scene.add( gltf.scene.children[0]);
+  obj = gltf.scene.children[0];
+  scene.add(obj);
   console.log("added", gltf.scene)
 }, undefined, function ( error ) {
   console.error("failed loading", model, error);
 } );
 
-camera.position.z = 50;
+camera.position.z = 1;
 
 /*
 var geometry = new THREE.BoxGeometry( 1, 1, 1 );
