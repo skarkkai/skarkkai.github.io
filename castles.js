@@ -12,7 +12,7 @@ const loader = new THREE.GLTFLoader();
 console.log("about to load", model)
 let obj;
 loader.load(model, function ( gltf ) {
-  obj = gltf.scene.children[0];
+  obj = gltf.scene;
   scene.add(obj);
   console.log("added", obj)
 }, undefined, function ( error ) {
