@@ -1,5 +1,5 @@
 //const model = "https://skarkkai.github.io/v3m2.glb";
-const model = "2CylinderEngine.glb";
+const model = "v3m2.glb";
 
 var scene = new THREE.Scene();
 var camera = new THREE.PerspectiveCamera( 75, window.innerWidth/window.innerHeight, 0.1, 1000 );
