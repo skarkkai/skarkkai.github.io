@@ -1,4 +1,4 @@
-//const model = "https://skarkkai.github.io/vega3000.glb";
+//const model = "https://skarkkai.github.io/v3m2.glb";
 const model = "2CylinderEngine.glb";
 
 var scene = new THREE.Scene();
